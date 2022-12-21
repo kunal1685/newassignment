@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --main-color: #5385c1;
+    --white-color: #ffffff;
+    --border-color: rgb(179, 178, 178);
+}
+
+html{
+    font-size: 16px;
+}
+
+/* --------------- header starts now ---------------- */
+header{
+    width: 100%;
+    min-height: 350px;
+    background-image: url("../theory/dd.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+ul li{
+    font-size: .7rem;
+    margin-left: 20px;
+}
+
+.banner{
+    max-width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    margin-top: 60px;
+}
+.banner h1{
+    font-size: 3rem;
+    font-weight: 200;
+}
+.banner p{
+    font-size: .8rem;
+    margin-top: 25px;
+    color: var(--border-color);
+}
+
+
+/* ------------- section1 stars now ------------ */
+.section1 .box{
+    width: 29%;
+}
+.section1 .box h4{
+    font-weight: 400;
+    color: var(--main-color);
+}
+.section1 .box p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 15px 0px;
+    line-height: 22px;
+    color: var(--border-color);
+}
+.btn{
+    height: 30px;
+    width: 70px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+hr{
+    width: 0.5px;
+    height: auto;
+    background-color: var(--border-color);
+    border: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* --------------- section2 starts now ---------------- */
+.section2{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 50px 0px;
+}
+.section2 h1{
+    font-weight: 200;
+}
+.section2 p{
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.section2 .box{
+    width: 20%;
+    border: 1px solid var(--border-color);
+    padding: 30px 0px;
+}
+.section2 .box h5{
+    font-weight: 400;
+    margin-top: 10px;
+}
+.section2 .box p{
+    font-size: 0.6rem;
+    font-weight: 100;
+    margin-top: 5px;
+}
+.section2 .box img{
+    width: 60%;
+    border-radius: 100%;
+}
+
+/* --------------- section3 starts now ---------------- */
+.section3{
+    text-align: center;
+    padding: 50px 0px;
+}
+.section3 h1{
+    font-weight: 200;
+    color: var(--main-color);
+}
+.section3 p{
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.section3 .left{
+    width: 47%;
+}
+.section3 img{
+    width: 100%;
+}
+
+.section3 .sides{
+    text-align: left;
+}
+.section3 .sides h4{
+    margin-top: 10px;
+    color: var(--main-color);
+    font-weight: 300;
+}
+.section3 .sides p{
+    line-height: 20px;
+}
+.section3 .sides .btn{
+    margin-top: 25px;
+}
+
+/* --------------- footer starts now ---------------- */
+footer.inner{
+    padding: 2%;
+}
+footer hr{
+    width: auto;
+    height: 0.5px;
+    background-color: var(--border-color);
+    border: none;
+    margin-top: -4%;
+}
+
+footer .intro{
+    margin-top: 20px;
+}
+footer p{
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+footer .icons i{
+    font-size: 12px;
+    color: var(--main-color);
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .banner h1{
+        font-size: 2.8rem;
+    }
+    .banner p{
+        line-height: 25px;
+    }
+
+    /* ---------- section1 ---------- */
+    .section1 .box{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .section1 .box:last-child{
+        margin-bottom: 60px;
+    }
+
+    /* ---------- section2 ---------- */
+    .section2 .box{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .section2 .box img{
+        width: 40%;
+    }
+
+    /* ---------- section3 ---------- */
+    .section3 .left{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    /* ---------- footer ---------- */
+    footer .intro{
+        margin-bottom: 20px;
+    }
+}
